@@ -1,5 +1,5 @@
 import React from 'react'
-import Hero from './components/hero'
+import Hero from './components/Hero'
 import Center from './components/Center'
 
 const App = () => {
