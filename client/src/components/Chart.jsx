@@ -29,7 +29,7 @@ const Chart = () => {
     useEffect(() => {
     const fetchScores = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/scores/${user.name}`);
+        const res = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/${user.name}`);
         setScores(res.data);
       } catch (error) {
         console.error("Error fetching scores:", error);
