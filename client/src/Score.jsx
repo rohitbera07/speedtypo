@@ -1,5 +1,5 @@
 import React from 'react'
-import Hero from './components/hero'
+import Hero from './components/Hero'
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import Chart from './components/Chart';
