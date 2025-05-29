@@ -12,7 +12,7 @@ app.use(cors({
 }));
 
 mongoose.connect(process.env.MONGO_URI).then(()=>{console.log("Connected to Mongodb")})
-    .catch((err)=>{console.log("database error")}) 
+    .catch((err)=>{console.log("database error"),err}) 
 
     app.use('/scores',scoreRoutes);
     
