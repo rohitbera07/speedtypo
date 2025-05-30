@@ -36,7 +36,7 @@ const Textbox = () => {
 
     const sendScoreToBackend = async () => {
       try {
-        await axios.post('${import.meta.env.VITE_BACKEND_URL}/scores', {
+        await axios.post('http://localhost:5000/scores', {
           userId: user.name,
           wpm: wpm, 
           accuracy: accuracy

@@ -16,8 +16,6 @@ router.post('/', async(req,res)=>{
 router.get('/:userId', async (req, res) => {
   try {
     const scores = await Score.find({ userId: req.params.userId }).sort({ createdAt: 1 });
-    console.log("chalra bc")
-    res.json(scores);
   } catch (err) {
     res.status(500).json({ error: 'Failed to fetch scores' });
   }
